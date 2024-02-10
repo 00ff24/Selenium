@@ -29,12 +29,12 @@ print("Se cargo la pagina de octano con éxito")
 wait.until(EC.presence_of_element_located((By.XPATH, "/html/body/div/div[1]/div/div/form/table/tbody/tr/td/div[1]/input")))
 
 input_element = driver.find_element(By.XPATH, "/html/body/div/div[1]/div/div/form/table/tbody/tr/td/div[1]/input")
-input_element.send_keys("refrigas.srl@hotmail.com")
+input_element.send_keys("user@user.com")
 
 print("Coloco los datos del usuario")
 
 input_element = driver.find_element(By.XPATH, "/html/body/div/div[1]/div/div/form/table/tbody/tr/td/div[2]/input")
-input_element.send_keys("refrigas")
+input_element.send_keys("password_user")
 input_element.send_keys(Keys.ENTER)
 
 print("Le doy enter y espero que cargue la pagina, despues que cargue le dare a detalles")
